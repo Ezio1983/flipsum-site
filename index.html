@@ -2,154 +2,166 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>FlipSum – Fast & Fun Math Game</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-        content="FlipSum is a bright, fast-paced math puzzle game. Match two cards to hit the target number. Play solo or challenge a friend!" />
+  <title data-i="home.title">FlipSum: Monster Math Battle</title>
+  <meta name="description" content="Four monsters of the Enchanted Forest settle it with math. Flip two cards, make the target number with + − × ÷, and attack! Free on iPhone and iPad." />
+  <meta property="og:title" content="FlipSum: Monster Math Battle" />
+  <meta property="og:description" content="Memory cards meet mental math. Free on iPhone and iPad." />
+  <meta property="og:image" content="https://ezio1983.github.io/flipsum-site/img/icon-512.png" />
+  <meta property="og:type" content="website" />
+  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="apple-touch-icon" href="img/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- 顶部導航 -->
   <header class="site-header">
     <div class="container header-inner">
-      <div class="logo">FlipSum</div>
+      <a class="brand" href="index.html"><img src="img/icon-180.png" alt="" />FlipSum</a>
       <nav class="nav">
-        <a href="#features">Features</a>
-        <a href="#modes">Game Modes</a>
-        <a href="#parents">For Parents</a>
-        <a href="#download">Download</a>
+        <a href="#how" data-i="nav.how">How to Play</a>
+        <a href="#monsters" data-i="nav.monsters">Monsters</a>
+        <a href="support.html" data-i="nav.support">Support</a>
       </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button data-lang="zh">中</button><button data-lang="en">EN</button><button data-lang="ja">日</button>
+      </div>
     </div>
   </header>
 
-  <!-- Hero 區 -->
-  <section class="hero">
-    <div class="container hero-inner">
-      <div class="hero-text">
-        <h1>Fast & Fun<br>Math Matching Game</h1>
-        <p>
-          Flip two cards, do the math, hit the target.  
-          A bright little game for kids, parents, and anyone who loves quick brain breaks.
-        </p>
-        <div class="hero-ctas" id="download">
-          <!-- 之後可以換成真的 App Store badge 圖片 -->
-          <a class="btn-primary" href="#" aria-disabled="true">
-            Coming to App Store
-          </a>
-          <p class="small-note">iPhone & iPad • Free to start</p>
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <p class="eyebrow" data-i="hero.eyebrow">MEMORY CARDS × MENTAL MATH</p>
+          <h1 data-ih="hero.h1">Four forest monsters.<br>One math battle.</h1>
+          <p class="lead" data-i="hero.lead">Flip two cards and make the target number with + − × ÷ to attack. Remember what your opponent revealed, and score with your own element to unleash a special move.</p>
+          <div class="ctas">
+            <a class="store-link" href="https://apps.apple.com/app/id6755813189">
+              <img class="store-badge" src="img/badge-en.svg" alt="Download on the App Store" hidden />
+              <span class="btn btn-primary" data-i="hero.cta">Download on the App Store</span>
+            </a>
+          </div>
+          <p class="note" data-i="hero.note">Free · iPhone &amp; iPad · English, 日本語, 繁體中文</p>
+        </div>
+
+        <div class="board" aria-hidden="true">
+          <div class="board-top">
+            <img src="img/monster_fire.png" alt="" />
+            <div class="orb"><span class="orb-label" data-i="board.target">TARGET</span>7</div>
+            <img src="img/monster_rock.png" alt="" />
+          </div>
+          <div class="cards">
+            <div class="c"></div><div class="c up fire">3</div><div class="c"></div><div class="c"></div>
+            <div class="c"></div><div class="c"></div><div class="c up ice">4</div><div class="c"></div>
+          </div>
+          <div class="board-ops"><span class="on">+</span><span>−</span><span>×</span><span>÷</span></div>
         </div>
       </div>
+    </section>
 
-      <!-- 手機截圖（之後把 src 換成你自己的圖） -->
-      <div class="hero-phone">
-        <div class="phone-frame">
-          <img src="images/flipsum-iphone.png"
-               alt="FlipSum gameplay screenshot" />
+    <section class="section section-alt" id="how">
+      <div class="container">
+        <h2 data-i="how.h2">How to play</h2>
+        <p class="section-lead" data-i="how.lead">A battle takes a few minutes. The rules take one.</p>
+        <div class="steps">
+          <div class="step">
+            <h3 data-i="how.1.h">Flip two cards</h3>
+            <p data-i="how.1.p">Each turn brings a new target number. Flip any two face-down cards.</p>
+          </div>
+          <div class="step">
+            <h3 data-i="how.2.h">Make the target</h3>
+            <p data-i="how.2.p">Pick + − × or ÷. Get it right to attack and keep flipping. Combo hits grow stronger.</p>
+          </div>
+          <div class="step">
+            <h3 data-i="how.3.h">Remember everything</h3>
+            <p data-i="how.3.p">Cards stay in place after flipping back. Can't make it? Tap PASS. A wrong answer backfires.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Features 區 -->
-  <section class="section" id="features">
-    <div class="container">
-      <h2 class="section-title">Why players love FlipSum</h2>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Quick Rounds</h3>
-          <p>Each game only takes a minute or two – perfect for short breaks.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Simple Rules</h3>
-          <p>Flip two cards and match the target number with +, −, × or ÷.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Bright & Friendly</h3>
-          <p>Clean yellow–blue design that feels cheerful, not noisy.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Play Anywhere</h3>
-          <p>Works great on iPhone and iPad – portrait, one-hand friendly.</p>
+    <section class="section" id="monsters">
+      <div class="container">
+        <h2 data-i="mon.h2">Meet the monsters</h2>
+        <p class="section-lead" data-i="mon.lead">Score with a card of your own element to unleash its special move.</p>
+        <div class="monsters">
+          <div class="monster" style="--el: var(--fire)">
+            <img src="img/monster_fire.png" alt="" />
+            <h3 data-i="mon.fire.n">Blazehorn</h3>
+            <span class="el" data-i="el.fire">Fire</span>
+            <p class="skill" data-i="mon.fire.s">Dragonfire Blast</p>
+            <p data-i="mon.fire.d">Extra fire damage.</p>
+          </div>
+          <div class="monster" style="--el: var(--ice)">
+            <img src="img/monster_ice.png" alt="" />
+            <h3 data-i="mon.ice.n">Frosttail</h3>
+            <span class="el" data-i="el.ice">Ice</span>
+            <p class="skill" data-i="mon.ice.s">Frosttail Chill</p>
+            <p data-i="mon.ice.d">Freezes the foe and halves their next turn's time.</p>
+          </div>
+          <div class="monster" style="--el: var(--wind)">
+            <img src="img/monster_wind.png" alt="" />
+            <h3 data-i="mon.wind.n">Stormhawk</h3>
+            <span class="el" data-i="el.wind">Wind</span>
+            <p class="skill" data-i="mon.wind.s">Gale Blade</p>
+            <p data-i="mon.wind.d">Shuffles face-down cards to scramble your foe's memory.</p>
+          </div>
+          <div class="monster" style="--el: var(--rock)">
+            <img src="img/monster_rock.png" alt="" />
+            <h3 data-i="mon.rock.n">Stonehide</h3>
+            <span class="el" data-i="el.rock">Rock</span>
+            <p class="skill" data-i="mon.rock.s">Ironrock Shield</p>
+            <p data-i="mon.rock.d">Blocks the next attack and reflects the damage.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- 模式區 -->
-  <section class="section section-alt" id="modes">
-    <div class="container">
-      <h2 class="section-title">Two ways to play</h2>
-      <div class="modes-grid">
-        <div class="mode-card">
-          <h3>Solo Mode</h3>
-          <p>
-            Race the clock and try to clear all cards as fast as you can.
-            Beat your own best time and climb the in-game record list.
-          </p>
-        </div>
-        <div class="mode-card">
-          <h3>Two-Player Mode</h3>
-          <p>
-            Take turns, score points, and see who can keep a streak of correct answers.
-            Perfect for siblings, classmates, or parent-child play.
-          </p>
+    <section class="section section-alt">
+      <div class="container">
+        <h2 data-i="modes.h2">Two ways to play</h2>
+        <p class="section-lead" data-i="modes.lead">Choose Fast pace for +2 damage within 5 seconds, or No Timer to take it slow.</p>
+        <div class="modes">
+          <div class="mode">
+            <h3 data-i="modes.solo.h">Solo Challenge</h3>
+            <p data-i="modes.solo.p">The CPU gets tougher every stage. Beat a monster and borrow its special move for the next battle.</p>
+          </div>
+          <div class="mode">
+            <h3 data-i="modes.duo.h">2-Player Battle</h3>
+            <p data-i="modes.duo.p">Take turns on one device. Perfect for family, friends and a quick rematch.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- For Parents 區 -->
-  <section class="section" id="parents">
-    <div class="container">
-      <h2 class="section-title">Made with parents in mind</h2>
-      <div class="parents-grid">
-        <div class="parent-card">
-          <h3>Light learning</h3>
-          <p>Kids practice addition, subtraction, multiplication and division without feeling like homework.</p>
-        </div>
-        <div class="parent-card">
-          <h3>Clear & minimal</h3>
-          <p>No account needed, no chat, and no dark patterns. Just simple play.</p>
-        </div>
-        <div class="parent-card">
-          <h3>Ad controls</h3>
-          <p>Optional in-app purchase lets families remove ads and unlock infinite hints.</p>
+    <section class="section">
+      <div class="container">
+        <div class="free">
+          <img src="img/monster_wind.png" alt="" />
+          <div>
+            <h2 data-i="free.h2">Free to play</h2>
+            <p data-i="free.p">The core game is free. Unlock Stormhawk by collecting Wind Feathers in Solo Challenge, or get the Full Version to unlock it instantly and remove full-screen ads. No account needed.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- 截圖區（之後放多張） -->
-  <section class="section section-alt">
-    <div class="container">
-      <h2 class="section-title">Screenshots</h2>
-      <div class="screenshots-grid">
-        <div class="screenshot-placeholder">Solo – Target & cards</div>
-        <div class="screenshot-placeholder">Two players – Score HUD</div>
-        <div class="screenshot-placeholder">Settings & difficulty</div>
-      </div>
-      <p class="small-note">
-        Replace these blocks with real screenshots once your App Store build is ready.
-      </p>
-    </div>
-  </section>
-
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <div class="logo footer-logo">FlipSum</div>
-        <p class="footer-text">A tiny math game developed with love in Taiwan.</p>
-      </div>
-      <div class="footer-links">
-        <a href="#download">Download</a>
-        <a href="#parents">For Parents</a>
-        <a href="mailto:contact@example.com">Support</a>
-      </div>
+      <img src="img/pfaw.png" alt="Play for a While" />
+      <p class="footer-text" data-i="footer.text">FlipSum is part of Play for a While, small games made in Taiwan.</p>
+      <nav class="footer-links">
+        <a href="support.html" data-i="nav.support">Support</a>
+        <a href="privacy.html" data-i="nav.privacy">Privacy Policy</a>
+        <a href="mailto:eziojobs01@gmail.com" data-i="nav.contact">Contact</a>
+      </nav>
     </div>
   </footer>
+
+  <script src="i18n.js"></script>
 </body>
 </html>
